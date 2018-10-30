@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="6"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_gravity="end"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#eee"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="50sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:padding="3dp"
+        android:text="清除"/>
+
+</GridLayout>

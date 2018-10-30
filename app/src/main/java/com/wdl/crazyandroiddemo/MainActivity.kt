@@ -1,5 +1,6 @@
 package com.wdl.crazyandroiddemo
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         linearLayout.addView(bn)
         bn.setOnClickListener {
             show.text = "onClick() + ${Date()}"
+            startActivity(Intent(this,CircleActivity::class.java))
         }
 
     }

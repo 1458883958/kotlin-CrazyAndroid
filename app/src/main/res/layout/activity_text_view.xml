@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical"
+    tools:context=".TextViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:background="@drawable/bg_border1"
+        android:text="我爱Android"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="我爱Android我爱Android我爱Android我爱Android我爱Android我爱Android我爱Android"
+        android:textAllCaps="true"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email|phone"
+        android:text="邮箱:1458883958@qq.com,电话:15080560559"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:text="测试测试"
+        android:textColor="#f00"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:text="@string/app_name" />
+
+    <CheckedTextView
+        android:background="@drawable/bg_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@drawable/ic_check_black_24dp"
+        android:checkMarkTint="@color/colorAccent"
+        android:text="可勾选文本|带边框文本" />
+
+</LinearLayout>
