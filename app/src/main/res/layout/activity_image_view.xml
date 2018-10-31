@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImageViewActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/plus"
+            android:text="增加透明度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/minus"
+            android:text="减少透明度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/next"
+            android:text="下一张"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 快捷关联联系人/邮箱等 -->
+    <QuickContactBadge
+        android:id="@+id/contact"
+        android:src="@drawable/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/i"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="120dp"
+        android:scaleType="fitCenter"
+        android:background="#00f"
+        android:layout_margin="10dp"
+        android:layout_height="120dp" />
+
+
+
+</LinearLayout>

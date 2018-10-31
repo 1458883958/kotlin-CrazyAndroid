@@ -13,11 +13,13 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity" />
         <activity android:name=".CircleActivity" />
-        <activity android:name=".FrameLayoutActivity"></activity>
-        <activity android:name=".CalculatorActivity">
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".TextViewActivity"></activity>
+        <activity android:name=".ClockActivity">
 
         </activity>
-        <activity android:name=".TextViewActivity"><intent-filter>
+        <activity android:name=".ImageViewActivity"> <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />

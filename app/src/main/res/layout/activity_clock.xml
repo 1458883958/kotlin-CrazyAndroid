@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClockActivity">
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextClock
+        android:format12Hour="yyyy年MM月dd日 H:mma EEEE"
+        android:textSize="20sp"
+        android:textColor="#f0f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <AnalogClock
+        android:dial="@drawable/ok"
+        android:hand_minute="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="开始计时"
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
