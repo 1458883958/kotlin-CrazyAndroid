@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wdl.crazyandroiddemo">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,15 +17,26 @@
         <activity android:name=".CircleActivity" />
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".CalculatorActivity" />
-        <activity android:name=".TextViewActivity"></activity>
-        <activity android:name=".ClockActivity">
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".ClockActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".SQLiteActivity" />
+        <activity android:name=".FileActivity"></activity>
+        <activity android:name=".ServiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".ImageViewActivity"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
