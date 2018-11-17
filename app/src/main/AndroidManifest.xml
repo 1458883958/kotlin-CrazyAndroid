@@ -4,6 +4,7 @@
     package="com.wdl.crazyandroiddemo">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,13 @@
         <activity android:name=".ClockActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".SQLiteActivity" />
-        <activity android:name=".FileActivity"></activity>
+        <activity android:name=".FileActivity">
+            <intent-filter>
+                <action android:name="com.wdl.mime" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/wdl.books"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".ServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +43,14 @@
             android:exported="false" />
         <service
             android:name=".service.MyIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
+
+        <provider
+            android:name=".contentProvider.MyContentProvider"
+            android:authorities="org.wdl.book"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider" />
     </application>
 
 </manifest>

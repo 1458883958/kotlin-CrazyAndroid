@@ -15,7 +15,7 @@ class SQLiteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sqlite)
         val helper = MySQLiteHelper(this, "demo.db", null, 3)
-        val db = helper.writableDatabase
+        val db = helper.readableDatabase
         mSave.setOnClickListener {
             val name = mName.text.toString()
             val age = mAge.text.toString().toInt()
